@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 10px;
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .section {
+      box-sizing: border-box;
+      border: 1px solid black;
+      float: left;
+      padding: 10px;
+      width: 33.33%;
+    }
+
+    
+    @media (max-width: 991px) {
+      .section {
+        width: 50%;
+      }
+    }
+
+    
+    @media (max-width: 767px) {
+      .section {
+        width: 100%;
+        float: none;
+      }
+    }
+
+    
+    #chicken {
+      background-color: #ffcccc;
+    }
+
+    #beef {
+      background-color: #ccffcc;
+    }
+
+    #sushi {
+      background-color: #ccccff;
+    }
+  </style>
+</head>
+<body>
+    <div style="display: flex;">
+  <div class="section" id="chicken">
+    <h2>Chicken</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="section" id="beef">
+    <h2>Beef</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="section" id="sushi">
+    <h2>Sushi</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  </div>
+</body>
+</html>
